@@ -1,12 +1,12 @@
 package com.cursan.miam;
 
 public class Customer {
-    String fullname;
-    String address;
+    private String fullname;
+    private String address;
 
     public Customer(){
-        fullname = "Nobody";
-        address = "Nowhere";
+        this.fullname = "Nobody";
+        this.address = "Nowhere";
     }
 
     public Customer(String fullname, String address){
