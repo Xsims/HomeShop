@@ -1,12 +1,17 @@
 package com.cursan.homeshop;
 
 public class ExpressDelivery implements Delivery {
-    public ExpressDelivery(String address) {
+    private String city;
 
+    public ExpressDelivery(String city) {
+        this.city = city;
     }
 
     @Override
     public double getPrice() {
-        return 0;
+        if (city.equals("Paris"))
+            return 6.99;
+        else
+            return 9.99;
     }
 }
