@@ -3,8 +3,8 @@ package com.cursan.miam;
 import java.util.Map;
 
 public class Bill {
-    Customer customer;
-    Map<Product, Integer> products;
+    private Customer customer;
+    private Map<Product, Integer> products;
 
     public Bill(Customer customer){
         this.customer = customer;
