@@ -1,15 +1,10 @@
-package com.cursan.miam;
+package com.cursan.homeshop;
 
 public class Customer {
     private String fullname;
     private String address;
 
-    public Customer(){
-        this.fullname = "Nobody";
-        this.address = "Nowhere";
-    }
-
-    public Customer(String fullname, String address){
+    public Customer(String fullname, String address) {
         this.fullname = fullname;
         this.address = address;
     }
@@ -17,7 +12,6 @@ public class Customer {
     public String getFullname() {
         return fullname;
     }
-
     public String getAddress() {
         return address;
     }

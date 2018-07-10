@@ -1,36 +1,35 @@
-package com.cursan.miam;
+package com.cursan.homeshop;
 
 public class Product {
-
     private String name;
     private String description;
     private double price;
 
-    public Product(){
-        name = "Inconnu";
-        description = "Pas de description";
-        price = 0.0d;
-    }
-
-    public Product(String name, String description, double price){
+    public Product(String name, String description, double price) {
         this.name = name;
         this.description = description;
         this.price = price;
     }
 
-    public void look(){
+    /**
+     * Display a full description of the product
+     */
+    public void look() {
         System.out.println(String.format(name + " : " + price + "%n" + description));
     }
 
-    public void buy(Bill bill, Integer quantity){
-        System.out.println("");
+    /**
+     * Add the product to a Bill
+     */
+    public void buy(Bill bill, Integer quantity) {
+
     }
 
     public String getName() {
         return name;
     }
 
-    public String getDescripton() {
+    public String getDescription() {
         return description;
     }
 
